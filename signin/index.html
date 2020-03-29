@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Форма для входа в систему</title>
+ 
+    </head>
+    <body>
+        <h1 class="a">Форма для входа в систему</h1>
+        <form method="post" action="http://httpbin.org/post">
+            <div class="form-group b">
+            <table>
+                <tr>
+                    <td><label for="loginField">Логин</label></td>
+                    <td><input id="loginField" type="text" name="login"></td>
+                </tr>
+                <tr>
+                    <td><label for="passwordField">Пароль</label></td>
+                    <td><input id="passwordField" type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center"><input type="submit" value="Войти"></td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    </body>

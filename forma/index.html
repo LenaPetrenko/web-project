@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Форма обратной связи</title>
+ 
+    </head>
+    <body>
+        <h1 class="a">Форма обратной связи</h1>
+        <form method="post" action="http://httpbin.org/post">
+            <div class="form-group b">
+           <label for="name">Имя:</label>
+<p><input name="name" id="name" type="text" placeholder="Иванов Иван Иванович"></p>
+</div>
+<div class="form-group">
+    <label for="sex">Укажите ваш пол:</label>
+    <p><input type="radio" name="sex" id="sex" value="male">Мужской
+    <input type="radio" name="sex" id="sex" value="female">Женский</p>
+    
+</div>
+<div class="form-group">
+    <label for="name">Адрес эл.почты</label>
+<p><input name="name" id="name" type="text" placeholder="Ivan@yandex.ru"></p>
+</div>
+<div class="form-group">
+    <label for="category">Выберите категорию:</label>
+    <select name="category" id="category">
+        <option value="" selected>Благодарность</option>
+        <option value="">Жалоба</option>
+        
+    </select>
+    
+</div>
+<div class="form-group b ">
+    <label for="comment">Ваш комментарий</label>
+<p class="c"><textarea rows="5" cols="30" name="comment" id="comment"  placeholder="Все супер!"></textarea></p>
+</div>
+<div class="form-group">
+    <label for="fff">Загрузить файл</label> 
+    <input type="file" name="fff" id="fff">
+</div>
+<div class="b"><input type="submit" value="Загрузить"></div>
+
+        </form>
+    </body>
+</html>
